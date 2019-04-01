@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd /home && find . -maxdepth 2 -type f -name 'backup-*.tar.gz' | grep -v 'virtfs' > /tmp/tar
-more /tmp/tar | awk '{ print "mv -f /home/"$1" /backup2/vps10/" }' > /tmp/move
+more /tmp/tar | awk '{ print "mv -f /home/"$1" /backup2//" }' > /tmp/move
 more /tmp/move
 
 
